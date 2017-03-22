@@ -1,0 +1,170 @@
+﻿/*Home section*/
+.home {
+    background: url(../images/home-page-background.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+    .home .main_home {
+        padding-top: 250px;
+    }
+
+        .home .main_home h1 {
+            color: #5e9a28;
+            width: 85%;
+        }
+
+        .home .main_home p.subtitle {
+            color: #ffffff;
+            font-family: 'robotomedium';
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+
+.overlay {
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    height: 750px;
+}
+
+
+/*Header*/
+.cs-header {
+    margin-top: 0px;
+    background-color: transparent;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-color: rgba(34, 61, 97, 0.64);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    z-index: 300;
+}
+
+.cs-fixed-header {
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+    .cs-header .navbar,
+    .cs-fixed-header .navbar {
+        background-color: transparent;
+        border-color: transparent;
+        transition: all .6s;
+        margin: 0px auto;
+    }
+
+        .cs-header .navbar > div,
+        .cs-fixed-header .navbar > div {
+            height: 70px;
+        }
+
+        .cs-header .navbar li > a:hover,
+        .cs-header .navbar li > a:focus,
+        .cs-fixed-header .navbar li > a:hover,
+        .cs-fixed-header .navbar li > a:focus {
+            color: #f6c23a;
+        }
+
+        .cs-header .navbar li > a,
+        .cs-fixed-header .navbar li > a {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .cs-header .navbar .navbar-nav > .open > a,
+        .cs-header .navbar .navbar-nav > .open > a:hover,
+        .cs-header .navbar .navbar-nav > .open > a:focus,
+        .cs-fixed-header .navbar .navbar-nav > .open > a,
+        .cs-fixed-header .navbar .navbar-nav > .open > a:hover,
+        .cs-fixed-header .navbar .navbar-nav > .open > a:focus {
+            background-color: transparent;
+            color: #f5c239;
+        }
+
+    .cs-header .navbar-brand,
+    .cs-fixed-header .navbar-brand {
+        height: 100%;
+        padding: 10px 15px;
+        margin-left: 0px !important;
+    }
+
+        .cs-header .navbar-brand > img,
+        .cs-fixed-header .navbar-brand > img {
+            height: 50px;
+        }
+
+    /*Menu scroll*/
+    .cs-fixed-header.menu-scroll {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        background-color: rgba(34, 61, 97, 0.64);
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        z-index: 300;
+    }
+
+    /*Search box*/
+    .cs-header .search-box,
+    .cs-fixed-header .search-box {
+        background-color: transparent;
+        border: unset;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+        .cs-header .search-box form,
+        .cs-fixed-header .search-box form {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cs-header .search-box .search-field,
+        .cs-fixed-header .search-box .search-field {
+            border-radius: 15px;
+        }
+
+            .cs-header .search-box .search-field:focus,
+            .cs-fixed-header .search-box .search-field:focus {
+                border-color: rgba(246, 194, 58, 1);
+                box-shadow: 0 1px 1px rgba(246, 194, 58, 1) inset, 0 0 8px rgba(246, 194, 58, 1);
+                outline: 0 none;
+            }
+
+/*Footer*/
+.footer {
+    background: #f1eee6;
+}
+
+.main_footer {
+    border-top: 1px solid #ddd;
+}
+
+.copyright_text p {
+    color: #aaa79e;
+    line-height: 25px;
+    padding: 40px;
+    max-width: 100%;
+}
+
+    .copyright_text p i {
+        padding: 0px 10px;
+        color: #ff0000;
+    }
+
+    .copyright_text p a {
+        padding: 0px 10px;
+        color: #5e9a28;
+    }
+
+.footer_socail {
+    padding: 40px;
+    text-align: right;
+}
+
+    .footer_socail a i {
+        color: #aaa79e;
+        padding: 0px 10px;
+    }
