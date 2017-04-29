@@ -1,0 +1,1 @@
+Image size: 4 x 3 | 534 x 384

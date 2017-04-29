@@ -1,0 +1,69 @@
+﻿.courses {
+}
+
+    .courses .banner {
+        position: relative;
+        background-image: url(../../images/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        margin-top: 0px;
+    }
+
+    .courses .search-bar {
+        margin-top: 20px;
+    }
+
+        .courses .search-bar .form-group {
+            margin-bottom: 0;
+        }
+
+    .courses .courses-list {
+    }
+
+        .courses .courses-list .course-box {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 2px rgba(0,0,0,.15);
+        }
+
+            .courses .courses-list .course-box .detail {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+                .courses .courses-list .course-box .detail div {
+                    padding-bottom: 15px;
+                }
+
+            .courses .courses-list .course-box .thumb img {
+                max-width: 100%;
+            }
+
+            .courses .courses-list .course-box .title {
+                padding-top: 15px;
+                font-weight: 700;
+            }
+
+            .courses .courses-list .course-box .description {
+            }
+
+            .courses .courses-list .course-box .author {
+                font-size: 12px;
+            }
+
+    .courses .load-more {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+        .courses .load-more .btn-load-more {
+            padding: 15px 25px;
+            background-color: #5e9a28;
+            color: #ffffff;
+            font-weight: 700;
+            -webkit-box-shadow: 3px 3px 5px 0px rgba(153,153,153,1);
+            -moz-box-shadow: 3px 3px 5px 0px rgba(153,153,153,1);
+            box-shadow: 3px 3px 5px 0px rgba(153,153,153,1);
+        }

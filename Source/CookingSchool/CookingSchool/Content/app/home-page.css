@@ -1,0 +1,82 @@
+﻿/*Home section*/
+.home {
+    background: url(../../images/home-page-background.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+    .home .main_home {
+        position: absolute;
+        top: 250px;
+        padding: 15px;
+    }
+
+        .home .main_home h1 {
+            color: #5e9a28;
+            width: 85%;
+        }
+
+        .home .main_home p.subtitle {
+            color: #ffffff;
+            font-size: 36px;
+        }
+
+    .home .search-box {
+        display: flex;
+    }
+
+        .home .search-box .search-input {
+            flex-grow: 1;
+            border-radius: 8px 0 0 8px;
+        }
+
+            .home .search-box .search-input > input {
+                border-radius: 8px 0 0 8px;
+                height: 40px;
+                border: none;
+            }
+
+        .home .search-box .search-btn {
+            color: #fff;
+            background-color: #1376d7;
+            border-color: transparent;
+            font-size: 22px;
+            border-radius: 0 8px 8px 0;
+            padding: 0 15px;
+            height: 40px;
+            border: none;
+        }
+
+.overlay {
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    height: 750px;
+}
+
+/*Section*/
+.choose .title,
+.service .title,
+.feedback .title {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/*Choose*/
+.choose {
+}
+
+    .choose .choose_icon > img {
+        height: 57px;
+    }
+
+/*Service*/
+.service {
+}
+
+    .service .single_service_icon > img {
+        height: 57px;
+    }
+
+/*Feedback*/
+.feedback {
+    margin-bottom: 50px;
+}

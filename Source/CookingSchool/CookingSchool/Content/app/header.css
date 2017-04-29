@@ -1,0 +1,43 @@
+﻿/*Header*/
+.cs-header {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(224,224,224,1);
+    box-shadow: 0px 5px 5px 0px rgba(224,224,224,1);
+}
+
+    .cs-header .navbar {
+        background-color: transparent;
+        border-color: transparent;
+        margin: 0;
+    }
+
+        .cs-header .navbar li > a {
+            text-transform: uppercase;
+        }
+
+            .cs-header .navbar li > a:hover {
+                color: #639d2f;
+                font-weight: 700;
+            }
+
+/*Fixed header*/
+.cs-fixed-header {
+    background-color: transparent;
+}
+
+    .cs-fixed-header .navbar {
+        background-color: transparent;
+        border-color: transparent;
+        margin: 0;
+    }
+
+        .cs-fixed-header .navbar li > a {
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+            .cs-fixed-header .navbar li > a:hover {
+                color: #639d2f;
+                font-weight: 700;
+            }

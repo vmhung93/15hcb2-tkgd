@@ -2,11 +2,19 @@
 
 $(window).scroll(function () {
     var top = $(document).scrollTop();
-    var height = 300;
+    var height = 750;
 
     if (top > height) {
-        jQuery('.navbar-fixed-top').addClass('menu-scroll');
+        $("#fixed-menu").removeClass("cs-fixed-header");
+        $("#fixed-menu").addClass("cs-header");
+
+        // Change logo
+        $("#cs-logo").attr("src", "/images/logo.png");
     } else {
-        jQuery('.navbar-fixed-top').removeClass('menu-scroll');
+        $("#fixed-menu").removeClass("cs-header");
+        $("#fixed-menu").addClass("cs-fixed-header");
+
+        // Change logo
+        $("#cs-logo").attr("src", "/images/logo-white.png");
     }
 });

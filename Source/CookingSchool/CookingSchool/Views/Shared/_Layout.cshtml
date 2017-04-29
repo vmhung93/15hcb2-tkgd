@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="~/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&amp;subset=vietnamese" rel="stylesheet">
 
     @if (string.IsNullOrWhiteSpace(ViewBag.Title))
     {
@@ -16,15 +17,15 @@
 
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
-    @*<link href="~/Content/site.css" rel="stylesheet" />*@
-    <link href="~/Content/style.css" rel="stylesheet" />
-    @*<link href="~/Content/responsive.css" rel="stylesheet" />*@
-    <link href="~/fonts/stylesheet.css" rel="stylesheet" />
+    <link href="~/Content/app/common.css" rel="stylesheet" />
+    <link href="~/Content/app/header.css" rel="stylesheet" />
+    <link href="~/Content/app/footer.css" rel="stylesheet" />
 
     @*Plugins*@
     @*<link href="~/Content/plugins/plugins.css" rel="stylesheet" />*@
     <link href="~/Content/plugins/teamslide.css" rel="stylesheet" />
     <link href="~/Content/plugins/portfolio.jquery.css" rel="stylesheet" />
+    <link href="~/Content/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
 
     @RenderSection("content", required: false)
 </head>
@@ -41,33 +42,11 @@
         </div>
 
         @*Footer*@
-        <div id="footer" class="row footer">
-            <div class="container">
-                <div class="main_footer">
-                    <div class="row">
+        @Html.Partial("_FooterPartial")
 
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="copyright_text">
-                                <p class="wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a>2016. All Rights Reserved</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="footer_socail">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-rss"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
-        </div>
+        @*<div class="scrollup">
+                <a href="#"><i class="fa fa-chevron-up"></i></a>
+            </div>*@
     </div>
 
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
@@ -76,6 +55,7 @@
 
     @*Plugins*@
     <script src="~/Scripts/plugins/portfolio.jquery.js"></script>
+    <script src="~/Scripts/plugins/bootstrap-select/bootstrap-select.min.js"></script>
     @*<script src="~/Scripts/plugins/plugins.js"></script>*@
 
     @RenderSection("scripts", required: false)
