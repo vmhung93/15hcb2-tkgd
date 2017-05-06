@@ -46,6 +46,15 @@
                 font-weight: 700;
             }
 
+                .courses .courses-list .course-box .title > a {
+                    color: inherit;
+                }
+
+                    .courses .courses-list .course-box .title > a:hover,
+                    .courses .courses-list .course-box .title > a:focus {
+                        text-decoration: none;
+                    }
+
             .courses .courses-list .course-box .description {
             }
 

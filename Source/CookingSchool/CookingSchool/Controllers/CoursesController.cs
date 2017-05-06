@@ -21,5 +21,12 @@ namespace CookingSchool.Controllers
         {
             return View("Index");
         }
+
+        // Search: Courses
+        [Route("{id}")]
+        public ActionResult Detail(int id)
+        {
+            return View();
+        }
     }
 }

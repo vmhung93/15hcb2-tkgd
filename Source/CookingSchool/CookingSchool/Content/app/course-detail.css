@@ -1,0 +1,16 @@
+﻿.course-detail {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+    .course-detail .detail-box .title,
+    .course-detail .detail-box .rating,
+    .course-detail .detail-box .chef {
+        margin-bottom: 15px;
+    }
+
+    .course-detail .detail-box .introduction,
+    .course-detail .detail-box .description,
+    .course-detail .detail-box .chef-info {
+        margin-bottom: 15px;
+    }
