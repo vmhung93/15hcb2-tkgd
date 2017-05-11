@@ -36,7 +36,16 @@
             text-transform: uppercase;
             color: #ffffff;
         }
-
+        .cs-fixed-header .navbar li > span {
+            text-transform: uppercase;
+            color: #ffffff;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            line-height: 20px;
+            position: relative;
+            display: block;
+            padding: 13px 5px;
+        }
             .cs-fixed-header .navbar li > a:hover {
                 color: #639d2f;
                 font-weight: 700;
