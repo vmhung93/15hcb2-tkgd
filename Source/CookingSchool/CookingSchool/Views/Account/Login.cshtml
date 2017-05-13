@@ -19,7 +19,7 @@
             <div class="col-xs-12">
                 <section id="loginForm">
                     @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-            {
+                    {
                         @Html.AntiForgeryToken()
                         <h2>SIGN IN</h2>
                         <hr />
@@ -53,11 +53,7 @@
                     }
                 </section>
             </div>
-            
+
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
