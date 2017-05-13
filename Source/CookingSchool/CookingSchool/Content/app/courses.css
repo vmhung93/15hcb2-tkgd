@@ -1,16 +1,6 @@
 ﻿.courses {
 }
 
-    .courses .banner {
-        position: relative;
-        background-image: url(../../images/banner.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 250px;
-        margin-top: 0px;
-    }
-
     .courses .search-bar {
         margin-top: 20px;
     }

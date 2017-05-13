@@ -209,6 +209,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\app\register.css" />
+    <Content Include="Content\app\login.css" />
+    <Content Include="Content\app\banner.css" />
     <Content Include="Content\app\course-detail.css" />
     <Content Include="Content\app\courses.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -323,6 +326,7 @@
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
     <Content Include="Views\Shared\_SearchBarPartial.cshtml" />
     <Content Include="Views\Courses\Detail.cshtml" />
+    <Content Include="Views\Shared\_BannerPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
