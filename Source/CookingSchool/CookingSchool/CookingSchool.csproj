@@ -260,6 +260,7 @@
     <Content Include="images\favicon.png" />
     <Content Include="images\home-page-background.jpg" />
     <Content Include="images\loading.gif" />
+    <Content Include="images\logo-white.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\no-image.jpg" />
     <Content Include="images\service.png" />
