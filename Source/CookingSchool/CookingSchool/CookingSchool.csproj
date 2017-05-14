@@ -271,8 +271,7 @@
     <Content Include="images\service.png" />
     <Content Include="images\service2.png" />
     <Content Include="images\service3.png" />
-    <Content Include="Scripts\app\menu.js" />
-    <Content Include="Scripts\app\account.js" />
+    <Content Include="Scripts\app\header.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
