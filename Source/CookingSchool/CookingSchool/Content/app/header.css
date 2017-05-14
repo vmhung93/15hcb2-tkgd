@@ -13,13 +13,33 @@
     }
 
         .cs-header .navbar li > a {
-            text-transform: uppercase;
+            background-color: transparent;
         }
 
-            .cs-header .navbar li > a:hover {
+            .cs-header .navbar li > a:hover,
+            .cs-header .navbar li.active > a,
+            .cs-header .navbar li.active > a:hover,
+            .cs-header .navbar li.active > a:focus {
                 color: #639d2f;
-                font-weight: 700;
+                font-weight: 500;
+                background-color: transparent;
             }
+
+        .cs-header .navbar li.menu-profile > a:hover {
+            color: #777;
+            font-weight: 400;
+        }
+
+        .cs-header .navbar li.menu-profile li > a:hover {
+            color: #639d2f;
+            font-weight: 400;
+        }
+
+        .cs-header .navbar .menu-profile.open > a,
+        .cs-header .navbar .menu-profile.open > a:focus,
+        .cs-header .navbar .menu-profile.open > a:hover {
+            background-color: transparent;
+        }
 
 /*Fixed header*/
 .cs-fixed-header {
@@ -33,20 +53,35 @@
     }
 
         .cs-fixed-header .navbar li > a {
-            text-transform: uppercase;
             color: #ffffff;
         }
-        .cs-fixed-header .navbar li > span {
-            text-transform: uppercase;
-            color: #ffffff;
-            padding-top: 10px;
-            padding-bottom: 15px;
-            line-height: 20px;
-            position: relative;
-            display: block;
-            padding: 13px 5px;
-        }
+
+            .cs-fixed-header .navbar li.active > a,
+            .cs-fixed-header .navbar li.active > a:hover,
+            .cs-fixed-header .navbar li.active > a:focus,
             .cs-fixed-header .navbar li > a:hover {
-                color: #639d2f;
-                font-weight: 700;
+                color: #ffffff;
+                font-weight: 500;
+                background-color: transparent;
             }
+
+
+        .cs-fixed-header .navbar .menu-profile.open > a {
+            color: #ffffff;
+            font-weight: 500;
+            background-color: transparent;
+        }
+
+        .cs-fixed-header .navbar li.menu-profile .dropdown-menu {
+            background-color: transparent;
+            border: none;
+        }
+
+        .cs-fixed-header .navbar li.menu-profile li > a:hover {
+            font-weight: 500;
+        }
+
+        .cs-fixed-header .navbar .menu-profile.open > a:focus,
+        .cs-fixed-header .navbar .menu-profile.open > a:hover {
+            font-weight: 500;
+        }

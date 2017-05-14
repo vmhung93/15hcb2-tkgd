@@ -20,14 +20,38 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="menu-navbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/courses">Courses</a></li>
-                            <li><a href="#portfolio">Gallery</a></li>
-                            <li><a href="#about"> About us</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="/account/login">Sign in</a></li>
-                            <li><a href="/account/register">Sign Up</a></li>
+                            <li class="@(ViewBag.MenuTab == "home" ? "active" : "" )">
+                                <a href="/">Trang chủ</a>
+                            </li>
+
+                            <li class="@(ViewBag.MenuTab == "courses" ? "active" : "" )">
+                                <a href="/courses">Khoá học</a>
+                            </li>
+
+                            <li class="anonymous @(ViewBag.MenuTab == "sign-in" ? "active" : "" )">
+                                <a href="/login">Đăng nhập</a>
+                            </li>
+
+                            <li class="anonymous @(ViewBag.MenuTab == "sign-up" ? "active" : "" )">
+                                <a href="/register">Đăng ký</a>
+                            </li>
+
+                            <li class="authorize @(ViewBag.MenuTab == "my-courses" ? "active" : "" )">
+                                <a href="#contact">Khoá học của tôi</a>
+                            </li>
+
+                            <li class="authorize menu-profile">
+                                <a href="javascript:void(0)" class="username" type="button" id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Username
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-profile">
+                                    <li><a href="/profile">Tài khoản</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="javascript:void(0)" id="btn-logout">Đăng xuất</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>

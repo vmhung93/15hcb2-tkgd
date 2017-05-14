@@ -1,0 +1,12 @@
+﻿.signIn-form {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+    .signIn-form .title {
+        margin-bottom: 10px;
+    }
+
+    .signIn-form .btn-signIn {
+        padding: 10px 25px;
+    }

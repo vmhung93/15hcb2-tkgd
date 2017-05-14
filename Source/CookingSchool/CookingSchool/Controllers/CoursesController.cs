@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace CookingSchool.Controllers
 {
@@ -12,6 +8,8 @@ namespace CookingSchool.Controllers
         // GET: Courses
         public ActionResult Index()
         {
+            ViewBag.MenuTab = "courses";
+
             return View();
         }
 
@@ -19,6 +17,8 @@ namespace CookingSchool.Controllers
         [Route("search")]
         public ActionResult Search(string q)
         {
+            ViewBag.MenuTab = "courses";
+
             return View("Index");
         }
 
@@ -26,6 +26,8 @@ namespace CookingSchool.Controllers
         [Route("{id}")]
         public ActionResult Detail(int id)
         {
+            ViewBag.MenuTab = "courses";
+
             return View();
         }
     }
