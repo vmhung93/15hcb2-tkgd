@@ -31,7 +31,6 @@
 /*
 * ------------ Start banner ------------
 */
-
 .banner {
     position: relative;
     background-image: url(../../images/banner.jpg);
@@ -41,7 +40,27 @@
     height: 250px;
     margin-top: 0px;
 }
-
 /*
 * ------------ End banner ------------
+*/
+
+/*
+* ------------ Start Multi line Ellipsis ------------
+*/
+.multiline-ellipsis {
+    display: block;
+    display: -webkit-box;
+    max-width: 400px;
+    /* Use this value to count block height */
+    line-height: 1.4em;
+    /* Max-height = Line-height (1)  Lines max number (2) */
+    height: 2.8em;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+/*
+* ------------ End Multi line Ellipsis ------------
 */

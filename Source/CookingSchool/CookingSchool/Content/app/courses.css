@@ -24,7 +24,7 @@
             }
 
                 .courses .courses-list .course-box .detail div {
-                    padding-bottom: 15px;
+                    padding-bottom: 10px;
                 }
 
             .courses .courses-list .course-box .thumb img {
@@ -47,6 +47,20 @@
 
             .courses .courses-list .course-box .description {
             }
+
+            .courses .courses-list .course-box .rating {
+                color: #639d2f;
+                font-size: 16px;
+            }
+
+            .courses .courses-list .course-box .price {
+                font-size: 16px;
+            }
+
+                .courses .courses-list .course-box .price span {
+                    font-weight: 500;
+                    margin-left: 5px;
+                }
 
             .courses .courses-list .course-box .author {
                 font-size: 12px;

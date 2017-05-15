@@ -6,11 +6,162 @@
     .course-detail .detail-box .title,
     .course-detail .detail-box .rating,
     .course-detail .detail-box .chef {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
+
+        .course-detail .detail-box .rating i {
+            color: #639d2f;
+            font-size: 18px;
+        }
+
+        .course-detail .detail-box .rating span {
+            margin-left: 10px;
+        }
 
     .course-detail .detail-box .introduction,
     .course-detail .detail-box .description,
     .course-detail .detail-box .chef-info {
         margin-bottom: 15px;
     }
+
+        .course-detail .detail-box .chef-info .box {
+            display: flex;
+        }
+
+        .course-detail .detail-box .chef-info .left {
+            width: 150px;
+            margin-right: 15px;
+        }
+
+            .course-detail .detail-box .chef-info .left .avatar {
+                width: 150px;
+                margin-bottom: 10px;
+            }
+
+            .course-detail .detail-box .chef-info .left > div {
+                float: left;
+                margin-bottom: 5px;
+                width: 100%;
+            }
+
+                .course-detail .detail-box .chef-info .left > div i {
+                    font-size: 18px;
+                }
+
+                .course-detail .detail-box .chef-info .left > div span {
+                    margin-left: 10px;
+                }
+
+        .course-detail .detail-box .chef-info .teacher-rating i {
+            color: #639d2f;
+        }
+
+        .course-detail .detail-box .chef-info .right {
+        }
+
+    .course-detail .detail-box .reference-courses {
+    }
+
+        .course-detail .detail-box .reference-courses .ref-course-box {
+            margin-right: 0;
+            box-shadow: 0 2px 2px rgba(0,0,0,.15);
+        }
+
+            .course-detail .detail-box .reference-courses .ref-course-box > div {
+                margin-bottom: 5px;
+            }
+
+            .course-detail .detail-box .reference-courses .ref-course-box a:hover,
+            .course-detail .detail-box .reference-courses .ref-course-box a:focus {
+                text-decoration: none;
+            }
+
+        .course-detail .detail-box .reference-courses .title a {
+            font-weight: 500;
+            color: inherit;
+        }
+
+        .course-detail .detail-box .reference-courses .rating {
+            color: #639d2f;
+        }
+
+            .course-detail .detail-box .reference-courses .rating i {
+                font-size: 16px;
+            }
+
+        .course-detail .detail-box .reference-courses .price {
+        }
+
+            .course-detail .detail-box .reference-courses .price i {
+                font-size: 16px;
+            }
+
+            .course-detail .detail-box .reference-courses .price span {
+                font-weight: 500;
+            }
+
+        .course-detail .detail-box .reference-courses .load-more {
+            margin-top: 20px;
+        }
+
+            .course-detail .detail-box .reference-courses .load-more a {
+                color: #639d2f;
+            }
+
+            .course-detail .detail-box .reference-courses .load-more i {
+                font-size: 18px;
+            }
+
+            .course-detail .detail-box .reference-courses .load-more a:hover,
+            .course-detail .detail-box .reference-courses .load-more a:focus {
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+
+    .course-detail .buy-box {
+    }
+
+        .course-detail .buy-box > div {
+            margin-bottom: 15px;
+        }
+
+        .course-detail .buy-box .video-introduction iframe {
+            border: none;
+            box-shadow: none;
+            width: 100%;
+            min-height: 240px;
+        }
+
+        .course-detail .buy-box .price i {
+            font-size: 26px;
+        }
+
+        .course-detail .buy-box .price span {
+            font-size: 24px;
+            font-weight: 500;
+            color: #639d2f;
+            margin-left: 10px;
+        }
+
+        .course-detail .buy-box .btn-buy {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+
+@media (max-width: 768px) {
+    .course-detail .detail-box .chef-info .box {
+        display: block;
+    }
+
+    .course-detail .detail-box .chef-info .right {
+        margin-top: 15px;
+        width: 100%;
+        float: left;
+    }
+
+    .course-detail .detail-box .reference-courses .ref-course-box > div {
+        margin-top: 15px;
+    }
+}
