@@ -30,5 +30,11 @@ namespace CookingSchool.Controllers
 
             return View();
         }
+
+        [Route("manage")]
+        public ActionResult Manage()
+        {
+            return View();
+        }
     }
 }
