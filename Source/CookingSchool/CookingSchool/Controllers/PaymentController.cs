@@ -2,12 +2,9 @@
 
 namespace CookingSchool.Controllers
 {
-    public class ManageController : Controller
+    public class PaymentController : Controller
     {
-        public ManageController()
-        {
-        }
-        
+        [Route("payment")]
         public ActionResult Index()
         {
             return View();

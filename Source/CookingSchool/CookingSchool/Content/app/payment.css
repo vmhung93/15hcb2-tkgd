@@ -1,0 +1,64 @@
+﻿.payment {
+    margin: 20px 0 50px 0;
+}
+
+    .payment label {
+        font-weight: 500;
+    }
+
+    .payment .btn-process-payment {
+        text-transform: uppercase;
+        padding: 10px 30px;
+    }
+
+    .payment .payment-method {
+    }
+
+        .payment .payment-method .title {
+            margin-bottom: 15px;
+        }
+
+        .payment .payment-method .panel-title label:hover {
+            cursor: pointer;
+        }
+
+        .payment .payment-method .credit-img,
+        .payment .payment-method .paypal-img {
+            display: flex;
+            align-items: center;
+        }
+
+            .payment .payment-method .credit-img img,
+            .payment .payment-method .paypal-img img {
+                max-height: 25px;
+                margin-right: 15px;
+            }
+
+                .payment .payment-method .credit-img img.visa {
+                    max-height: 15px;
+                }
+
+    .payment .payment-info {
+    }
+
+        .payment .payment-info .title {
+            margin-bottom: 15px;
+        }
+
+
+    /*Custom radio button css*/
+    .payment .payment-method .panel-title label > input[type=radio] {
+        height: 16px;
+        width: 16px;
+        display: none;
+    }
+
+        .payment .payment-method .panel-title label > input[type=radio] + span {
+            background: url('../../images/radio-button.png') left 1px no-repeat;
+            padding-left: 25px;
+        }
+
+        .payment .payment-method .panel-title label > input[type=radio]:checked + span {
+            background: url('../../images/radio-button-checked.png') left 1px no-repeat;
+            padding-left: 25px;
+        }

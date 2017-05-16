@@ -198,7 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,6 +208,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\app\payment.css" />
     <Content Include="Content\app\sign-in.css" />
     <Content Include="Content\app\userprofile.css" />
     <Content Include="Content\app\register.css" />
@@ -251,7 +252,38 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="images\banks\PABB.jpg" />
+    <Content Include="images\banks\PACB.jpg" />
+    <Content Include="images\banks\PAGB.jpg" />
+    <Content Include="images\banks\PBAB.jpg" />
+    <Content Include="images\banks\PBIDV.jpg" />
+    <Content Include="images\banks\PBVB.jpg" />
+    <Content Include="images\banks\PDAB.jpg" />
+    <Content Include="images\banks\PEIB.jpg" />
+    <Content Include="images\banks\PGPB.jpg" />
+    <Content Include="images\banks\PHDB.jpg" />
+    <Content Include="images\banks\PLPB.jpg" />
+    <Content Include="images\banks\PMB.jpg" />
+    <Content Include="images\banks\PMRTB.jpg" />
+    <Content Include="images\banks\PNAB.jpg" />
+    <Content Include="images\banks\PNVB.jpg" />
+    <Content Include="images\banks\POCB.jpg" />
+    <Content Include="images\banks\POCEB.jpg" />
+    <Content Include="images\banks\PPGB.jpg" />
+    <Content Include="images\banks\PSCB.jpg" />
+    <Content Include="images\banks\PSEAB.jpg" />
+    <Content Include="images\banks\PSGB.jpg" />
+    <Content Include="images\banks\PSHB.jpg" />
+    <Content Include="images\banks\PTCB.jpg" />
+    <Content Include="images\banks\PTPB.jpg" />
+    <Content Include="images\banks\PVAB.jpg" />
+    <Content Include="images\banks\PVCB.jpg" />
+    <Content Include="images\banks\PVIB.jpg" />
+    <Content Include="images\banks\PVPB.jpg" />
+    <Content Include="images\banks\PVTB.jpg" />
     <Content Include="images\banner.jpg" />
+    <Content Include="images\chef1.jpg" />
+    <Content Include="images\chef2.jpg" />
     <Content Include="images\courses\course1.jpg" />
     <Content Include="images\courses\course10.jpg" />
     <Content Include="images\courses\course2.jpg" />
@@ -267,10 +299,16 @@
     <Content Include="images\loading.gif" />
     <Content Include="images\logo-white.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\master.png" />
     <Content Include="images\no-image.jpg" />
+    <Content Include="images\paypal.png" />
+    <Content Include="images\radio-button-checked.png" />
+    <Content Include="images\radio-button.png" />
     <Content Include="images\service.png" />
     <Content Include="images\service2.png" />
     <Content Include="images\service3.png" />
+    <Content Include="images\visa.png" />
+    <Content Include="Scripts\app\payment.js" />
     <Content Include="Scripts\app\header.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -301,12 +339,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_MenuPartial.cshtml" />
@@ -317,6 +352,7 @@
     <Content Include="Views\Courses\Detail.cshtml" />
     <Content Include="Views\Shared\_BannerPartial.cshtml" />
     <Content Include="Views\Account\Profile.cshtml" />
+    <Content Include="Views\Payment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
