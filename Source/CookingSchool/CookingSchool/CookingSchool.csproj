@@ -352,6 +352,7 @@
     <Content Include="Views\Courses\Detail.cshtml" />
     <Content Include="Views\Shared\_BannerPartial.cshtml" />
     <Content Include="Views\Account\Profile.cshtml" />
+    <Content Include="Views\Courses\Manage.cshtml" />
     <Content Include="Views\Payment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
