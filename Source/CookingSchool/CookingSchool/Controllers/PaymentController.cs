@@ -9,5 +9,11 @@ namespace CookingSchool.Controllers
         {
             return View();
         }
+
+        [Route("payment-success")]
+        public ActionResult PaymentSuccess()
+        {
+            return View();
+        }
     }
 }

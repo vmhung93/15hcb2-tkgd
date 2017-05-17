@@ -45,6 +45,46 @@
             margin-bottom: 15px;
         }
 
+        .payment .payment-info .box {
+            padding: 15px;
+            background-color: #f5f5f5;
+        }
+
+            .payment .payment-info .box > div {
+                margin-bottom: 10px;
+            }
+
+            .payment .payment-info .box i {
+                margin-right: 5px;
+            }
+
+        .payment .payment-info .course-name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .payment .payment-info .price {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+            .payment .payment-info .price span {
+                color: #639d2f;
+            }
+
+        .payment .payment-info .time i {
+            font-size: 16px;
+        }
+
+        .payment .payment-info .chef i {
+            font-size: 16px;
+        }
+
+        .payment .payment-info .coupon {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f5f5f5;
+        }
 
     /*Custom radio button css*/
     .payment .payment-method .panel-title label > input[type=radio] {
@@ -62,3 +102,9 @@
             background: url('../../images/radio-button-checked.png') left 1px no-repeat;
             padding-left: 25px;
         }
+
+@media (max-width: 768px) {
+    .payment .payment-method .title {
+        margin-top: 25px;
+    }
+}

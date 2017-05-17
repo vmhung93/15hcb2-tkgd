@@ -208,6 +208,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\app\payment-success.css" />
     <Content Include="Content\app\payment.css" />
     <Content Include="Content\app\profile-manage.css" />
     <Content Include="Content\app\sign-in.css" />
@@ -308,6 +309,7 @@
     <Content Include="images\service.png" />
     <Content Include="images\service2.png" />
     <Content Include="images\service3.png" />
+    <Content Include="images\success-icon.png" />
     <Content Include="images\visa.png" />
     <Content Include="Scripts\app\payment.js" />
     <Content Include="Scripts\app\header.js" />
@@ -359,6 +361,7 @@
     <Content Include="Views\Account\Profile-image.cshtml" />
     <Content Include="Views\Account\Profile-info.cshtml" />
     <Content Include="Views\Account\Profile-notification.cshtml" />
+    <Content Include="Views\Payment\PaymentSuccess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
