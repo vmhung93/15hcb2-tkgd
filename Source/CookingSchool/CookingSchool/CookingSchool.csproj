@@ -209,6 +209,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\app\payment.css" />
+    <Content Include="Content\app\profile-manage.css" />
     <Content Include="Content\app\sign-in.css" />
     <Content Include="Content\app\userprofile.css" />
     <Content Include="Content\app\register.css" />
@@ -354,6 +355,10 @@
     <Content Include="Views\Account\Profile.cshtml" />
     <Content Include="Views\Courses\Manage.cshtml" />
     <Content Include="Views\Payment\Index.cshtml" />
+    <Content Include="Views\Account\Profile-creditcard.cshtml" />
+    <Content Include="Views\Account\Profile-image.cshtml" />
+    <Content Include="Views\Account\Profile-info.cshtml" />
+    <Content Include="Views\Account\Profile-notification.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Tài khoản";
+    ViewBag.Title = "Sign In Cooking School";
 }
 @section menuHeader{
     @Html.Partial("_MenuPartial")
@@ -34,13 +34,13 @@
                         <!-- SIDEBAR MENU -->
                         <div class="profile-usermenu">
                             <ul class="nav">
-                                <li class="active">
+                                <li>
                                     <a href="/profile">
                                         <i class="glyphicon glyphicon-home"></i>
                                         Xem thông tin chung
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="/profileinfo">
                                         <i class="glyphicon glyphicon-user"></i>
                                         Thông tin cá nhân
@@ -75,8 +75,7 @@
                         <div role="tabpanel" class="tab-pane active" id="public">
                             @*--------Title--------*@
                             <div class="profile-title">
-                                <h2>Thông tin chung</h2>
-                                <p>Thông tin được hiển thị công khai trên hệ thống</p>
+                                <h2>Thông tin học viên</h2>                                
                             </div>
                             @*--------Ending title--------*@
                             @*--------Form thông tin--------*@
@@ -88,42 +87,49 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="displayname">Tên hiển thị</label>
+                                    <label class="control-label col-sm-2" for="username">Email</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="displayname" placeholder="Tên hiển thị">
+                                        <input type="text" class="form-control" id="username" placeholder="vd : abc@xyz.com">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="datejoin">Ngày tham gia</label>
+                                    <label class="control-label col-sm-2" for="displayname">Ngày sinh</label>
                                     <div class="col-sm-10">
-                                        <input type="datetime" class="form-control" id="datejoin" placeholder="Ngày tham gia">
+                                        <div class="input-group date" data-provide="datepicker">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                        </div> 
                                     </div>
-                                </div>
+                                </div>                                
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="username">Số điện thoại</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="username" placeholder="Số điện thoại">
+                                    </div>
+                                </div>   
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="username">CMND</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="username" placeholder="Chứng minh nhân dân">
+                                    </div>
+                                </div> 
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="username">Địa chỉ</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="username" placeholder="Địa chỉ thường trú">
+                                    </div>
+                                </div>                            
+                                <!--Button Save-->
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <button type="submit" class="btn btn-default">Thay đổi</button>
                                     </div>
                                 </div>
                             </form>
-                            @*--------Ending Form thông tin--------*@
-                            @*--------Panel thống kê--------*@
-                            <div class="row statistics">
-                                <div class="panel panel-success col-xs-3">
-                                    <div class="panel-heading"><b>Khóa học sở hữu</b></div>
-                                    <div class="panel-body"><h2>10</h2></div>
-                                </div>
-
-                                <div class="panel panel-info col-xs-3">
-                                    <div class="panel-heading"><b>Các bài viết</b></div>
-                                    <div class="panel-body"><h2>12</h2></div>
-                                </div>
-
-                                <div class="panel panel-warning col-xs-3">
-                                    <div class="panel-heading"><b>Bình luận</b></div>
-                                    <div class="panel-body"><h2>15</h2></div>
-                                </div>
-                            </div>
-                            @*--------Ending Panel thống kê--------*@
+                            @*--------Ending Form thông tin--------*@ 
+                                                     
                         </div>
                     </div>
                 </div>
