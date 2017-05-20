@@ -1,0 +1,110 @@
+﻿.payment {
+    margin: 20px 0 50px 0;
+}
+
+    .payment label {
+        font-weight: 500;
+    }
+
+    .payment .btn-process-payment {
+        text-transform: uppercase;
+        padding: 10px 30px;
+    }
+
+    .payment .payment-method {
+    }
+
+        .payment .payment-method .title {
+            margin-bottom: 15px;
+        }
+
+        .payment .payment-method .panel-title label:hover {
+            cursor: pointer;
+        }
+
+        .payment .payment-method .credit-img,
+        .payment .payment-method .paypal-img {
+            display: flex;
+            align-items: center;
+        }
+
+            .payment .payment-method .credit-img img,
+            .payment .payment-method .paypal-img img {
+                max-height: 25px;
+                margin-right: 15px;
+            }
+
+                .payment .payment-method .credit-img img.visa {
+                    max-height: 15px;
+                }
+
+    .payment .payment-info {
+    }
+
+        .payment .payment-info .title {
+            margin-bottom: 15px;
+        }
+
+        .payment .payment-info .box {
+            padding: 15px;
+            background-color: #f5f5f5;
+        }
+
+            .payment .payment-info .box > div {
+                margin-bottom: 10px;
+            }
+
+            .payment .payment-info .box i {
+                margin-right: 5px;
+            }
+
+        .payment .payment-info .course-name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .payment .payment-info .price {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+            .payment .payment-info .price span {
+                color: #639d2f;
+            }
+
+        .payment .payment-info .time i {
+            font-size: 16px;
+        }
+
+        .payment .payment-info .chef i {
+            font-size: 16px;
+        }
+
+        .payment .payment-info .coupon {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f5f5f5;
+        }
+
+    /*Custom radio button css*/
+    .payment .payment-method .panel-title label > input[type=radio] {
+        height: 16px;
+        width: 16px;
+        display: none;
+    }
+
+        .payment .payment-method .panel-title label > input[type=radio] + span {
+            background: url('../../images/radio-button.png') left 1px no-repeat;
+            padding-left: 25px;
+        }
+
+        .payment .payment-method .panel-title label > input[type=radio]:checked + span {
+            background: url('../../images/radio-button-checked.png') left 1px no-repeat;
+            padding-left: 25px;
+        }
+
+@media (max-width: 768px) {
+    .payment .payment-method .title {
+        margin-top: 25px;
+    }
+}

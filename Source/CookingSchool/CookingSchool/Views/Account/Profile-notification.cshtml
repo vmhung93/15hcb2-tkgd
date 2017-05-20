@@ -1,0 +1,183 @@
+﻿@{
+    ViewBag.Title = "Sign In Cooking School";
+}
+@section menuHeader{
+    @Html.Partial("_MenuPartial")
+}
+
+@section content{
+    <link href="~/Content/app/profile-manage.css" rel="stylesheet" />
+}
+<section id="manage" class="manage">
+    @*Banner*@
+    @Html.Partial("_BannerPartial")
+    <div class="overlay">
+        <div class="container">
+            <div class="row profile">
+                <div class="col-md-3">
+                    <div class="profile-sidebar">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="/images/service2.png" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                Hung Vu
+                            </div>
+                            <div class="profile-usertitle-job">
+                                Học viên
+                            </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="profile-usermenu">
+                            <ul class="nav">
+                                <li>
+                                    <a href="/profile">
+                                        <i class="glyphicon glyphicon-home"></i>
+                                        Xem thông tin chung
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/profileinfo">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                        Thông tin cá nhân
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/profileimage">
+                                        <i class="glyphicon glyphicon-camera"></i>
+                                        Ảnh đại điện
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/profilecredit">
+                                        <i class="glyphicon glyphicon-credit-card"></i>
+                                        Các thẻ thanh toán
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="/profilenotice">
+                                        <i class="glyphicon glyphicon-flag"></i>
+                                        Thông báo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                </div>
+                <!-- Nội dung Profile -->
+                <div class="col-md-9">
+                    <div class="profile-content">
+                        <div role="tabpanel" class="tab-pane active" id="public">
+                            @*--------Title--------*@
+                            <div class="profile-title">
+                                <h2>Các thông báo của bạn</h2>
+                            </div>
+                            @*--------Ending title--------*@
+                            @*--------Form thông tin--------*@
+                            <form class="form-horizontal">
+                                <!--Notifications-->
+                                <div class="form-group">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Giới thiệu khóa học : Món ăn khai vị...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Thông báo : Chương trình giảm giá từ ngày 18/5/2015...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Thông báo : Cập nhật thêm món ăn vào khóa học : Các món bò...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Thông báo : Minh đã bình luận về bài viết...
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Xem thông tin chung
+                                            </a>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Xem thông tin chung
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Xem thông tin chung
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                Xem thông tin chung
+                                            </a>
+                                        </li>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Pagination-->
+                                <div class="form-group">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="disabled">
+                                                <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#">1 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">5</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </form>
+                            @*--------Ending Form thông tin--------*@
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Ending Nội dung Profile -->
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

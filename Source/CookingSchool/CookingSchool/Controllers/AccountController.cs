@@ -29,5 +29,29 @@ namespace CookingSchool.Controllers
         {
             return View();
         }
+
+        [Route("profileinfo")]
+        public ActionResult Profileinfo()
+        {
+            return View("Profile-info");
+        }
+
+        [Route("profileimage")]
+        public ActionResult Profileimage()
+        {
+            return View("Profile-image");
+        }
+
+        [Route("profilenotice")]
+        public ActionResult Profilenotice()
+        {
+            return View("Profile-notification");
+        }
+
+        [Route("profilecredit")]
+        public ActionResult Profilecredit()
+        {
+            return View("Profile-creditcard");
+        }
     }
 }

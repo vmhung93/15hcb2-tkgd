@@ -1,0 +1,305 @@
+﻿
+@{
+    ViewBag.Title = "Thanh toán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section menuHeader{
+    @Html.Partial("_MenuPartial")
+}
+
+@section content{
+    <link href="~/Content/app/payment.css" rel="stylesheet" />
+}
+
+@section scripts {
+    <script src="~/Scripts/app/payment.js"></script>
+}
+
+<div class="container">
+    <div class="row payment">
+        @*Payment info in mobile*@
+        <div class="col-xs-12 visible-xs payment-info">
+            <div class="title">
+                <h3>Thông tin thanh toán</h3>
+            </div>
+
+            <div class="col-xs-12 box">
+                <div class="course-name">Cá kèo nướng muối ớt</div>
+
+                <div class="price">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <span>Thành tiền: 169.000 VND</span>
+                </div>
+
+                <div class="time">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span>Thời gian: 20/1/2017</span>
+                </div>
+
+                <div class="chef">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span>Đầu bếp: Gordon Ramsay</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 coupon">
+                <div class="row">
+                    <div class="form-group col-xs-12">Mã giảm giá / quà tặng</div>
+
+                    <div class="form-group col-xs-12">
+                        <input type="text" class="form-control" id="coupon" placeholder="Nhập ở đây">
+                    </div>
+
+                    <div class="form-group col-xs-12 margin-bottom-0">
+                        <button class="btn btn-warning">Áp dụng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*Payment method*@
+        <div class="col-xs-12 col-sm-8 payment-method">
+            <div class="title">
+                <h3>Phương thức thanh toán</h3>
+            </div>
+
+            <div class="panel-group" id="method" role="tablist" aria-multiselectable="true">
+                @*Credit card*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-credit-card">
+                        <h4 class="panel-title">
+                            <label for="credit-card-radio">
+                                <input type="radio" id="credit-card-radio" name="payment-method-radio" value="Credit Card" checked="checked" />
+                                <span>Credit Card</span>
+                                <a role="button" data-toggle="collapse" data-parent="#method" href="#credit-card" aria-expanded="true" aria-controls="credit-card"></a>
+                            </label>
+                        </h4>
+                    </div>
+
+                    <div id="credit-card" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-credit-card">
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-offset-3 col-xs-9 credit-img">
+                                            <img src="~/images/visa.png" class="visa" />
+                                            <img src="~/images/master.png" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Card number*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <label for="card-number" class="col-xs-3">Số thẻ</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="card-number" placeholder="VD: 4123 4567 8901 2345">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Card owner*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <label for="card-owner" class="col-xs-3">Tên in trên thẻ</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="card-owner" placeholder="VD: NGUYEN VAN A">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Expire date*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <label for="expired-date" class="col-xs-3">Ngày hết hạn</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="expired-date" placeholder="MM/YY">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*CVV*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <label for="cvv" class="col-xs-3">Mã bảo mật</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="cvv" placeholder="VD: 123">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Process payment button*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-offset-3 col-xs-9">
+                                            <a href="/payment-success" class="btn btn-success btn-process-payment">Tiến hành thanh toán</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*PayPal*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-paypal">
+                        <h4 class="panel-title">
+                            <label for="paypal-radio">
+                                <input type="radio" id="paypal-radio" name="payment-method-radio" value="Paypal" />
+                                <span>PayPal</span>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#method" href="#paypal" aria-expanded="false" aria-controls="paypal"></a>
+                            </label>
+                        </h4>
+                    </div>
+
+                    <div id="paypal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-paypal">
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-offset-3 col-xs-9 paypal-img">
+                                            <img src="~/images/paypal.png" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Card number*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <label for="paypal-email" class="col-xs-3">Email PayPal</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="email" class="form-control" id="paypal-email" placeholder="Địa chỉ email PayPal">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Card owner*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <label for="paypal-password" class="col-xs-3">Mật khẩu PayPal</label>
+
+                                        <div class="col-xs-9">
+                                            <input type="password" class="form-control" id="paypal-password" placeholder="Mật khẩu tài khoản PayPal">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                @*Process payment button*@
+                                <div class="form-group col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-offset-3 col-xs-9">
+                                            <a href="/payment-success" class="btn btn-success btn-process-payment">Đăng nhập PayPal</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*ATM*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-atm">
+                        <h4 class="panel-title">
+                            <label for="atm-radio">
+                                <input type="radio" id="atm-radio" name="payment-method-radio" value="ATM Nội địa" />
+                                <span>ATM Nội địa</span>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#method" href="#atm" aria-expanded="false" aria-controls="atm"></a>
+                            </label>
+                        </h4>
+                    </div>
+
+                    <div id="atm" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-atm">
+                        <div class="panel-body atm-img">
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <a href="#"><img src="~/images/banks/PABB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PACB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PAGB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PBAB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PBIDV.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PBVB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PDAB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PEIB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PGPB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PHDB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PLPB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PMB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PMRTB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PNAB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PNVB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/POCB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/POCEB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PPGB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PSCB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PSEAB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PSGB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PSHB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PTCB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PTPB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PVAB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PVCB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PVIB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PVPB.jpg" /></a>
+                                    <a href="#"><img src="~/images/banks/PVTB.jpg" /></a>
+                                </div>
+
+                                @*Process payment button*@
+                                <div class="form-group col-xs-12">
+                                    <a href="/payment-success" class="btn btn-success btn-process-payment">Tiến hành thanh toán</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*Payment info in desktop*@
+        <div class="col-sm-4 hidden-xs payment-info">
+            <div class="title">
+                <h3>Thông tin thanh toán</h3>
+            </div>
+
+            <div class="col-xs-12 box">
+                <div class="course-name">Cá kèo nướng muối ớt</div>
+
+                <div class="price">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <span>Thành tiền: 169.000 VND</span>
+                </div>
+
+                <div class="time">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span>Thời gian: 20/1/2017</span>
+                </div>
+
+                <div class="chef">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span>Đầu bếp: Gordon Ramsay</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 coupon">
+                <div class="row">
+                    <div class="form-group col-xs-12">Mã giảm giá / quà tặng</div>
+
+                    <div class="form-group col-xs-12">
+                        <input type="text" class="form-control" id="coupon" placeholder="Nhập ở đây">
+                    </div>
+
+                    <div class="form-group col-xs-12 margin-bottom-0">
+                        <button class="btn btn-warning">Áp dụng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
