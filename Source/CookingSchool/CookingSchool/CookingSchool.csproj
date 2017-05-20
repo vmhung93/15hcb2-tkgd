@@ -318,6 +318,7 @@
     <Content Include="Views\Shared\_BannerPartial.cshtml" />
     <Content Include="Views\Account\Profile.cshtml" />
     <Content Include="Views\Courses\Manage.cshtml" />
+    <Content Include="Views\Courses\ListCourses.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

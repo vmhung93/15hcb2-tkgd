@@ -36,5 +36,11 @@ namespace CookingSchool.Controllers
         {
             return View();
         }
+
+        [Route("listCourses")]
+        public ActionResult ListCourses()
+        {
+            return View();
+        }
     }
 }

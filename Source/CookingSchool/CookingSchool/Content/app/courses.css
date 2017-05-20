@@ -80,7 +80,6 @@
             -moz-box-shadow: 3px 3px 5px 0px rgba(153,153,153,1);
             box-shadow: 3px 3px 5px 0px rgba(153,153,153,1);
         }
-
 @media (max-width: 768px) {
     .courses .search-bar > div {
         margin-top: 15px;

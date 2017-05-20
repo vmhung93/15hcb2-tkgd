@@ -1,0 +1,288 @@
+﻿@{
+    ViewBag.Title = "List Cost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section menuHeader{
+    @Html.Partial("_MenuPartial")
+}
+
+@section content{
+    <link href="~/Content/app/course-detail.css" rel="stylesheet" />
+}
+
+<div class="container course-detail">
+    <div class="row">
+        @*Course detail*@
+        <div class="col-sm-8 detail-box">
+            <div class="row">
+                @*Title*@
+                <div class="col-xs-12 title">
+                    <h2>Khoá học cá kèo</h2>
+                </div>
+
+                @*Rating and viewer*@
+                <div class="col-xs-12 rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <span>9669 người dùng đã mua lớp học</span>
+                </div>
+
+                @*Chef*@
+                <div class="col-xs-12 chef">
+                    Đầu bếp hướng dẫn: <strong>Gordon Ramsay</strong>
+                </div>
+
+                @*Publish date*@
+                <div class="col-xs-12 chef">
+                    Ngày học: 1/7/2017
+                </div>
+
+                @*Description*@
+                <div class="col-xs-12 description">
+                    <h4>Mô tả khoá học</h4>
+
+                    <div>
+                        Begin to handle your knife like a pro<br />
+                        Learn about whole foods and how they impact your health<br />
+                        Learn to make delicious salads and dressings<br />
+                        Be able to cook fluffy grains and tender legumes<br />
+                        Learn to create homemade pizza and perfectly al dente pasta<br />
+                        Learn how to steam and roast delicious, nutrient-dense vegetable dishes<br />
+                        Apply dry-heat methods, master the fry pan and roast the perfect chicken<br />
+                        Understand moist-heat techniques, such as steaming, poaching and simmering<br />
+                        Understand stocks, how to prepare and how to use them to boost flavor<br />
+                        Gain the skills to start improving your health by cooking from scratch
+                    </div>
+                </div>
+
+                @*Chef information*@
+                <div class="col-xs-12 chef-info">
+                    <h4>Đầu bếp</h4>
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="avatar">
+                                <img src="~/images/chef1.jpg" alt="chef avatart" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </div>
+
+                            <div class="teacher-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span>4.9</span>
+                            </div>
+
+                            <div class="students">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>1,969 học viên</span>
+                            </div>
+
+                            <div class="teacher-course">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                <span>19 bài học</span>
+                            </div>
+
+                            <div class="teacher-course">
+                                <i class="fa fa-film" aria-hidden="true"></i>
+                                <span>2 khoá học</span>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            Gordon James Ramsay, OBE (born 8 November 1966) is a British celebrity chef, restaurateur, and television personality.<br />
+                            Born in Scotland, Ramsay grew up in Stratford-upon-Avon. His restaurants have been awarded 16 Michelin stars in total.<br />
+                            His signature restaurant, Restaurant Gordon Ramsay in Chelsea, London, has held 3 Michelin stars since 2001.<br />
+                            First appearing on television in the UK in the late 1990s, by 2004 Ramsay had become one of the best known celebrity chefs in British popular culture, and, along with other chefs like Jamie Oliver, Nigella Lawson, and Delia Smith, he has influenced viewers to become more culinarily adventurous.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*Buy box*@
+        <div class="col-sm-4 hidden-xs buy-box">
+            <div class="row video-introduction">
+                <iframe src="https://www.youtube.com/embed/QZhI2qD3WHM"></iframe>
+            </div>
+
+            <div class="row price">
+                <i class="fa fa-money" aria-hidden="true"></i>
+                <span>150,000 VNĐ</span>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-block btn-success text-uppercase btn-buy">Mua ngay</button>
+            </div>
+        </div>
+
+
+        @*Reference courses*@
+        <div class="col-xs-12 reference-courses">
+            <h4>Danh sách các bài bọc</h4>
+
+            <ul class="list-group">
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                     </div>
+                </li>
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item course-item">
+                    <div class="row">
+                        @*Image*@
+                        <div class="thumb col-xs-3">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+                        <div class="detail col-xs-9">
+                            @*Title*@
+                            <div class="title">
+                                <a href="/courses/1">Full-Stack Web Apps with Meteor and React</a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+                            <button type="button" class="btn btn-success ">Xem bài học</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

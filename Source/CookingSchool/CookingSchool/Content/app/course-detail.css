@@ -150,6 +150,21 @@
             font-size: 16px;
         }
 
+                .course-item .detail {
+            height: 100%;
+            float: left;
+        }
+
+        .course-item .detail .description {
+           float: left;
+            min-height: 130px;
+            width: 100%;
+        }
+
+        .course-item .detail button {
+           float: right;
+        }
+
 @media (max-width: 768px) {
     .course-detail .detail-box .chef-info .box {
         display: block;
