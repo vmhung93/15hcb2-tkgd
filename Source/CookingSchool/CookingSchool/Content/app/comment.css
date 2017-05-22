@@ -17,9 +17,38 @@
 
 .comment .comment-content .controls a{
     display:inline;
+    color:#639d2f;
 }
 
 .comment .comment-content .controls .separator {
     padding-left:3px;
     padding-right:3px;
+}
+
+.load-more-comment {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #f6f7f8;
+    color: #639d2f;
+}
+
+.load-more-reply {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    color: #639d2f;
+}
+
+.load-more-reply .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }
