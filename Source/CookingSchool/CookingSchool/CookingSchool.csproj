@@ -310,6 +310,7 @@
     <Content Include="images\service2.png" />
     <Content Include="images\service3.png" />
     <Content Include="images\success-icon.png" />
+    <Content Include="images\user-comment.jpg" />
     <Content Include="images\visa.png" />
     <Content Include="Scripts\app\payment.js" />
     <Content Include="Scripts\app\header.js" />

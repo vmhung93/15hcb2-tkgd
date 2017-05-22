@@ -9,6 +9,7 @@
 
 @section content{
     <link href="~/Content/app/course-detail.css" rel="stylesheet" />
+<link href="~/Content/app/comment.css" rel="stylesheet" />
 }
 
 <div class="container course-detail">
@@ -118,6 +119,12 @@
                         </div>
                     </div>
                 </div>
+
+                @*Comment*@
+                <div class="col-xs-12">
+                    @Html.Partial("_Comment")
+                </div>
+              
 
                 @*Reference courses*@
                 <div class="col-xs-12 reference-courses">

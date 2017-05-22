@@ -1,31 +1,25 @@
-﻿.avatar {
+﻿.comment .media-object {
+    max-height:64px;
+    max-width:64px;
+}
+
+.comment .comment-content {
+    padding:10px;
+    border-bottom: 1px solid #F3F3F3;
+    margin-bottom: 5px;
+}
+
+
+.comment .comment-content .controls {
     
 }
 
-.avatar img {
-    height: 125px;
-    width: 125px;
-    display: block;
+
+.comment .comment-content .controls a{
+    display:inline;
 }
 
-.profile-content {
-    margin-top:10px;
-}
-
-.profile-content .profile-title {
-    text-align: center;
-}
-    
-.statistics {
-    margin-top: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.statistics .panel {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: center;
+.comment .comment-content .controls .separator {
+    padding-left:3px;
+    padding-right:3px;
 }
