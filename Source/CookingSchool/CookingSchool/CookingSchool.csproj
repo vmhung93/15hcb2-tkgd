@@ -208,6 +208,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\app\comment.css" />
+    <Content Include="Content\app\lesson-detail.css" />
     <Content Include="Content\app\payment-success.css" />
     <Content Include="Content\app\payment.css" />
     <Content Include="Content\app\profile-manage.css" />
@@ -364,6 +366,8 @@
     <Content Include="Views\Account\Profile-info.cshtml" />
     <Content Include="Views\Account\Profile-notification.cshtml" />
     <Content Include="Views\Payment\PaymentSuccess.cshtml" />
+    <Content Include="Views\Shared\_Comment.cshtml" />
+    <Content Include="Views\Courses\Lesson.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

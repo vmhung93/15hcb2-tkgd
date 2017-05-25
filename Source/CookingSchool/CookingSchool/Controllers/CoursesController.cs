@@ -2,10 +2,10 @@
 
 namespace CookingSchool.Controllers
 {
-    [RoutePrefix("courses")]
     public class CoursesController : Controller
     {
         // GET: Courses
+        [Route("courses")]
         public ActionResult Index()
         {
             ViewBag.MenuTab = "courses";
@@ -22,8 +22,8 @@ namespace CookingSchool.Controllers
             return View("Index");
         }
 
-        // Search: Courses
-        [Route("{id}")]
+        // Course detail
+        [Route("courses/{id}")]
         public ActionResult Detail(int id)
         {
             ViewBag.MenuTab = "courses";
@@ -31,13 +31,22 @@ namespace CookingSchool.Controllers
             return View();
         }
 
-        [Route("manage")]
+        // Lesson detail
+        [Route("lessons/{id}")]
+        public ActionResult Lesson(int id)
+        {
+            ViewBag.MenuTab = "my-courses";
+
+            return View();
+        }
+
+        [Route("manage-courses")]
         public ActionResult Manage()
         {
             return View();
         }
 
-        [Route("listCourses")]
+        [Route("list-courses")]
         public ActionResult ListCourses()
         {
             return View();
