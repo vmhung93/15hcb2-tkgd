@@ -314,6 +314,7 @@
     <Content Include="images\success-icon.png" />
     <Content Include="images\user-comment.jpg" />
     <Content Include="images\visa.png" />
+    <Content Include="Scripts\app\lesson-detail.js" />
     <Content Include="Scripts\app\payment.js" />
     <Content Include="Scripts\app\header.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -333,6 +334,13 @@
     <Content Include="Scripts\plugins\js.cookie.js" />
     <Content Include="Scripts\plugins\plugins.js" />
     <Content Include="Scripts\plugins\portfolio.jquery.js" />
+    <Content Include="Scripts\plugins\swiper\maps\swiper.jquery.min.js.map" />
+    <Content Include="Scripts\plugins\swiper\maps\swiper.jquery.umd.min.js.map" />
+    <Content Include="Scripts\plugins\swiper\maps\swiper.min.js.map" />
+    <Content Include="Scripts\plugins\swiper\swiper.css" />
+    <Content Include="Scripts\plugins\swiper\swiper.js" />
+    <Content Include="Scripts\plugins\swiper\swiper.min.css" />
+    <Content Include="Scripts\plugins\swiper\swiper.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
