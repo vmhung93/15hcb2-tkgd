@@ -3,15 +3,18 @@
     margin-bottom: 50px;
 }
 
+    /*Details box*/
     .lesson-detail .detail-box > div {
         margin-bottom: 15px;
     }
 
+    /*Rating*/
     .lesson-detail .detail-box .rating i {
         color: #639d2f;
         font-size: 22px;
     }
 
+    /*Chef*/
     .lesson-detail .detail-box .chef {
         display: flex;
         align-content: center;
@@ -41,6 +44,7 @@
                 font-size: 16px;
             }
 
+    /*Social link*/
     .lesson-detail .detail-box .social-link {
         height: 65px;
         display: flex;
@@ -54,6 +58,25 @@
             font-size: 12px;
         }
 
+    /*Ingredient*/
+    .lesson-detail .ingredient {
+        border-right: 1px solid #dddddd;
+    }
+
+    /*Ingredient*/
+    .lesson-detail .preprocessing {
+    }
+
+        .lesson-detail .preprocessing > div {
+            background-color: #f9f9f9;
+            padding: 15px;
+            line-height: 30px;
+        }
+
+    /*Processing steps*/
+    .lesson-detail .processing-steps {
+    }
+
 @media (max-width: 768px) {
     .lesson-detail .detail-box .social-link {
         justify-content: flex-start;
@@ -64,6 +87,7 @@
             margin-right: 10px;
         }
 }
+
 
 
 /*Swiper*/

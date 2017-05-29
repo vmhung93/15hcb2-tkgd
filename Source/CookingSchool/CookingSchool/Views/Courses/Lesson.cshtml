@@ -21,7 +21,7 @@
 <div class="container lesson-detail">
     <div class="row">
         @*Slider in mobile*@
-        <div class="col-sm-4 visible-xs">
+        <div class="col-xs-12 visible-xs">
             <div class="row">
                 <!-- Swiper -->
                 <div class="col-xs-12">
@@ -126,7 +126,6 @@
                     </a>
                 </div>
 
-
                 @*Introduction*@
                 <div class="col-xs-12 introduction">
                     <h4>Giới thiệu</h4>
@@ -142,193 +141,12 @@
                         You will also learn how to make pork and cabbage potstickers with a flavorful scallion dipping sauce as well as vegetarian mushroom and cabbage potstickers.
                     </div>
                 </div>
-
-                @*Description*@
-                <div class="col-xs-12 description">
-                    <h4>Mô tả khoá học</h4>
-
-                    <div>
-                        Begin to handle your knife like a pro<br />
-                        Learn about whole foods and how they impact your health<br />
-                        Learn to make delicious salads and dressings<br />
-                        Be able to cook fluffy grains and tender legumes<br />
-                        Learn to create homemade pizza and perfectly al dente pasta<br />
-                        Learn how to steam and roast delicious, nutrient-dense vegetable dishes<br />
-                        Apply dry-heat methods, master the fry pan and roast the perfect chicken<br />
-                        Understand moist-heat techniques, such as steaming, poaching and simmering<br />
-                        Understand stocks, how to prepare and how to use them to boost flavor<br />
-                        Gain the skills to start improving your health by cooking from scratch
-                    </div>
-                </div>
-
-                @*Chef information*@
-                <div class="col-xs-12 chef-info">
-                    <h4>Đầu bếp</h4>
-
-                    <div class="box">
-                        <div class="left">
-                            <div class="avatar">
-                                <img src="~/images/chef1.jpg" alt="chef avatart" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
-                            </div>
-
-                            <div class="teacher-rating">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                                <span>4.9</span>
-                            </div>
-
-                            <div class="students">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span>1,969 học viên</span>
-                            </div>
-
-                            <div class="teacher-course">
-                                <i class="fa fa-play-circle" aria-hidden="true"></i>
-                                <span>19 bài học</span>
-                            </div>
-
-                            <div class="teacher-course">
-                                <i class="fa fa-film" aria-hidden="true"></i>
-                                <span>2 khoá học</span>
-                            </div>
-                        </div>
-
-                        <div class="right">
-                            Gordon James Ramsay, OBE (born 8 November 1966) is a British celebrity chef, restaurateur, and television personality.<br />
-                            Born in Scotland, Ramsay grew up in Stratford-upon-Avon. His restaurants have been awarded 16 Michelin stars in total.<br />
-                            His signature restaurant, Restaurant Gordon Ramsay in Chelsea, London, has held 3 Michelin stars since 2001.<br />
-                            First appearing on television in the UK in the late 1990s, by 2004 Ramsay had become one of the best known celebrity chefs in British popular culture, and, along with other chefs like Jamie Oliver, Nigella Lawson, and Delia Smith, he has influenced viewers to become more culinarily adventurous.
-                        </div>
-                    </div>
-                </div>
-
-                @*Comment*@
-                <div class="col-xs-12">
-                    @Html.Partial("_Comment")
-                </div>
-
-                @*Reference courses*@
-                <div class="col-xs-12 reference-courses">
-                    <h4>Các bài học liên quan</h4>
-
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="row ref-course-box">
-                            <div class="course-img">
-                                <a href="#">
-                                    <img src="~/images/courses/course1.jpg" class="img-responsive" alt="reference course" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
-                                </a>
-                            </div>
-
-                            <div class="col-xs-12 title multiline-ellipsis">
-                                <a href="#">
-                                    The Complete JavaScript Course: Build a Real-World Project
-                                </a>
-                            </div>
-
-                            <div class="col-xs-12 rating">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="col-xs-12 price">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                <span>50,000 VNĐ</span>
-                            </div>
-
-                            <div class="col-xs-12 author">
-                                Andrew Mead
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="row ref-course-box">
-                            <div class="course-img">
-                                <a href="#">
-                                    <img src="~/images/courses/course10.jpg" class="img-responsive" alt="reference course" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
-                                </a>
-                            </div>
-
-                            <div class="col-xs-12 title multiline-ellipsis">
-                                <a href="#">
-                                    The Complete JavaScript Course: Build a Real-World Project
-                                </a>
-                            </div>
-
-                            <div class="col-xs-12 rating">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="col-xs-12 price">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                <span>50,000 VNĐ</span>
-                            </div>
-
-                            <div class="col-xs-12 author">
-                                Andrew Mead
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="row ref-course-box">
-                            <div class="course-img">
-                                <a href="#">
-                                    <img src="~/images/courses/course5.jpg" class="img-responsive" alt="reference course" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
-                                </a>
-                            </div>
-
-                            <div class="col-xs-12 title multiline-ellipsis">
-                                <a href="#">
-                                    The Complete JavaScript Course: Build a Real-World Project
-                                </a>
-                            </div>
-
-                            <div class="col-xs-12 rating">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="col-xs-12 price">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                                <span>50,000 VNĐ</span>
-                            </div>
-
-                            <div class="col-xs-12 author">
-                                Andrew Mead
-                            </div>
-                        </div>
-                    </div>
-
-                    @*Load more link*@
-                    <div class="col-xs-12 load-more">
-                        <div class="row">
-                            <a href="#">
-                                <i class="fa fa-plus-square" aria-hidden="true"></i>
-                                <span>Xem thêm bài học</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         @*Slider in desktop*@
         <div class="col-sm-4 hidden-xs">
-            <div class="row">                
+            <div class="row">
                 <!-- Swiper -->
                 <div class="col-xs-12">
                     <div class="swiper-container">
@@ -359,6 +177,94 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        @*Separate line*@
+        <div class="col-xs-12">
+            <hr class="separate-line" />
+        </div>
+
+        @*Ingredient*@
+        <div class="col-xs-12 col-sm-6 ingredient">
+            <h4>Nguyên liệu chế biến</h4>
+
+            <div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Số lượng</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1. Cá kèo nguyên con</td>
+                            <td>1 kg</td>
+                        </tr>
+
+                        <tr>
+                            <td>2. Xiên que</td>
+                            <td>Vừa đủ</td>
+                        </tr>
+
+                        <tr>
+                            <td>3. Rau ăn kèm</td>
+                            <td>Vừa đủ</td>
+                        </tr>
+
+                        <tr>
+                            <td>4. Gia vị</td>
+                            <td>Vừa đủ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        @*Preprocessing*@
+        <div class="col-xs-12 col-sm-6 preprocessing">
+            <h4>Sơ chế nguyên liệu</h4>
+
+            <div class="col-xs-12">
+                1. Cá kèo rửa sạch, xiên vào que nguyên con <br />
+                2. Ớt sừng, ớt hiển rửa sạch, bỏ hạt, giã nát với muối hạt <br />
+                3. Ướp cá kèo với muối ớt giã khoảng 15p<br />
+                4. Cá kèo rửa sạch, xiên vào que nguyên con <br />
+                5. Cá kèo rửa sạch, xiên vào que nguyên con
+            </div>
+        </div>
+
+        @*Separate line*@
+        <div class="col-xs-12">
+            <hr class="separate-line" />
+        </div>
+
+        @*Processing steps*@
+        <div class="col-xs-12 processing-steps">
+            <h4>Các bước thực hiện</h4>
+
+            <div class="box">
+                <div class="left">
+                </div>
+
+                <div class="right">
+                    Gordon James Ramsay, OBE (born 8 November 1966) is a British celebrity chef, restaurateur, and television personality.<br />
+                    Born in Scotland, Ramsay grew up in Stratford-upon-Avon. His restaurants have been awarded 16 Michelin stars in total.<br />
+                    His signature restaurant, Restaurant Gordon Ramsay in Chelsea, London, has held 3 Michelin stars since 2001.<br />
+                    First appearing on television in the UK in the late 1990s, by 2004 Ramsay had become one of the best known celebrity chefs in British popular culture, and, along with other chefs like Jamie Oliver, Nigella Lawson, and Delia Smith, he has influenced viewers to become more culinarily adventurous.
+                </div>
+            </div>
+        </div>
+
+        @*Separate line*@
+        <div class="col-xs-12">
+            <hr class="separate-line" />
+        </div>
+
+        @*Comment*@
+        <div class="col-xs-12">
+            @Html.Partial("_Comment")
         </div>
     </div>
 </div>
