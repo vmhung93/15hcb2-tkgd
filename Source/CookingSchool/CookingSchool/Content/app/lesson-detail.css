@@ -77,6 +77,34 @@
     .lesson-detail .processing-steps {
     }
 
+        .lesson-detail .processing-steps .box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .lesson-detail .processing-steps .box .left {
+                line-height: 25px;
+            }
+
+                .lesson-detail .processing-steps .box .left ul {
+                    padding-left: 15px;
+                }
+
+            .lesson-detail .processing-steps .box .right {
+            }
+
+            .lesson-detail .processing-steps .box iframe {
+                border: none;
+            }
+
+    /*Requirement achieved*/
+    .lesson-detail .requiremnet-achieved {
+    }
+
+        .lesson-detail .requiremnet-achieved ul {
+            padding-left: 15px;
+        }
+
 @media (max-width: 768px) {
     .lesson-detail .detail-box .social-link {
         justify-content: flex-start;
@@ -87,8 +115,6 @@
             margin-right: 10px;
         }
 }
-
-
 
 /*Swiper*/
 .swiper-container {
