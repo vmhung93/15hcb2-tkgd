@@ -15,11 +15,11 @@ namespace CookingSchool.Controllers
 
         // Search: Courses
         [Route("search")]
-        public ActionResult Search(string q)
+        public ActionResult Search()
         {
             ViewBag.MenuTab = "courses";
 
-            return View("Index");
+            return View();
         }
 
         // Course detail
@@ -43,12 +43,16 @@ namespace CookingSchool.Controllers
         [Route("manage-courses")]
         public ActionResult Manage()
         {
+            ViewBag.MenuTab = "my-courses";
+
             return View();
         }
 
         [Route("list-courses")]
         public ActionResult ListCourses()
         {
+            ViewBag.MenuTab = "my-courses";
+
             return View();
         }
     }

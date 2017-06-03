@@ -1,0 +1,528 @@
+﻿@{
+    ViewBag.Title = "Kết quả tìm kiếm";
+}
+
+@section menuHeader{
+    @Html.Partial("_MenuPartial")
+}
+
+@section content{
+    <link href="~/Content/app/courses.css" rel="stylesheet" />
+}
+
+<div class="courses">
+    @*Banner*@
+    @Html.Partial("_BannerPartial")
+
+    @*Content*@
+    <div class="container">
+        @*Courses*@
+        <div class="row">
+            <h2 class="col-xs-12 margin-bottom-20">Kết quả tìm kiếm</h2>
+
+            <div class="col-xs-12 courses-list">
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course1.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course2.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course3.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course4.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course5.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="/courses/1">
+                                <img src="~/images/courses/course6.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="#">
+                                <img src="~/images/courses/course7.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="#">
+                                <img src="~/images/courses/course8.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="#">
+                                <img src="~/images/courses/course9.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="#">
+                                <img src="~/images/courses/course10.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 padding-left-right-0">
+                    <div class="course-box">
+                        @*Image*@
+                        <div class="thumb">
+                            <a href="#">
+                                <img src="~/images/courses/course11.jpg" alt="course box" class="img-responsive" onerror="this.onerror = null; this.src = '/images/no-image.jpg';" />
+                            </a>
+                        </div>
+
+                        <div class="detail">
+                            @*Title*@
+                            <div class="title">
+                                <a href="#">
+                                    Full-Stack Web Apps with Meteor and React
+                                </a>
+                            </div>
+
+                            @*Short description*@
+                            <div class="description">
+                                Get up to speed with ASP.NET Core, Framework Core and build a full-stack Angular 2 (and Angular 4) app
+                            </div>
+
+                            @*Rating*@
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+
+                            @*Price*@
+                            <div class="price">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>50,000 VNĐ</span>
+                            </div>
+
+                            @*Author*@
+                            <div class="author">
+                                Andrew Mead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*Load more*@
+        <div class="row load-more">
+            <div class="col-xs-12 text-center">
+                <a href="#" class="btn btn-load-more">LOAD MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
